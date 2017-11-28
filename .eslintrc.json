@@ -39,7 +39,7 @@
       "error",
       "always"
     ],
-    "no-console": "warn",
+    "no-console": "off",
     "react/prop-types": "off"
   }
 }
