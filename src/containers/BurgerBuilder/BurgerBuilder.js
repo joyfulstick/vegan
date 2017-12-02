@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Aux from '../../hoc/Aux';
+import Aux from '../../hoc/Aux/Aux';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
@@ -9,14 +9,14 @@ const INGREDIENT_PRICES = {
   salad: 0.7,
   tofu: 2.5,
   falafel: 6.3,
-  beetRoot: 1.5
+  beetroot: 1.5
 };
 
 class BurgerBuilder extends Component {
   state = {
     ingredients: {
       falafel: 0,
-      beetRoot: 0,
+      beetroot: 0,
       tofu: 0,
       salad: 0
     },
