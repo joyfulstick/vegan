@@ -1,7 +1,7 @@
 .BreadBottom {
     height: 13%;
     width: 80%;
-    background: linear-gradient(#F08E4A, #e27b36);
+    background: linear-gradient(#f08e4a, #e27b36);
     border-radius: 0 0 30px 30px;
     box-shadow: inset -15px 0 #c15711;
     margin: 2% auto;
@@ -18,15 +18,15 @@
 }
 
 .Seeds1 {
-    width: 10%;
-    height: 15%;
+    width: 8%;
+    height: 12%;
     position: absolute;
-    background-color: white;
+    background-color: var(--vegan-tofu);
     left: 30%;
     top: 50%;
     border-radius: 40%;
     transform: rotate(-20deg);
-    box-shadow: inset -2px -3px #c9c9c9;
+    box-shadow: inset -2px -3px var(--vegan-seeds);
 }
 
 .Seeds1:after {
@@ -34,12 +34,12 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: white;
+    background-color: var(--vegan-tofu);
     left: -170%;
     top: -260%;
     border-radius: 40%;
     transform: rotate(60deg);
-    box-shadow: inset -1px 2px #c9c9c9;
+    box-shadow: inset -1px 2px var(--vegan-seeds);
   }
   
 .Seeds1:before {
@@ -47,24 +47,24 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: white;
+    background-color: var(--vegan-tofu);
     left: 180%;
     top: -50%;
     border-radius: 40%;
     transform: rotate(60deg);
-    box-shadow: inset -1px -3px #c9c9c9;
+    box-shadow: inset -1px -3px var(--vegan-seeds);
   }
 
   .Seeds2 {
-    width: 10%;
-    height: 15%;
+    width: 8%;
+    height: 12%;
     position: absolute;
-    background-color: white;
+    background-color: var(--vegan-tofu);
     left: 64%;
     top: 50%;
     border-radius: 40%;
     transform: rotate(10deg);
-    box-shadow: inset -3px 0 #c9c9c9;
+    box-shadow: inset -3px 0 var(--vegan-seeds);
   }
   
   .Seeds2:before {
@@ -72,19 +72,20 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: white;
+    background-color: var(--vegan-tofu);
     left: 150%;
     top: -130%;
     border-radius: 40%;
     transform: rotate(90deg);
-    box-shadow: inset 1px 3px #c9c9c9;
+    box-shadow: inset 1px 3px var(--vegan-seeds);
   }
   
 
 .Falafel {
     width: 80%;
-    height: 8%;
-    background: linear-gradient(#7f3608, #702e05);
+    height: 7%;
+    background: linear-gradient(45deg, #fb3 50%, var(--vegan-seeds) 0);
+    background-size: 30px 30px;
     margin: 2% auto;
     border-radius: 15px;
 }
@@ -93,7 +94,7 @@
     width: 90%;
     height: 4.5%;
     margin: 2% auto;
-    background: linear-gradient(#f4d004, #d6bb22);
+    background: linear-gradient(var(--vegan-tofu), #ffee9c);
     border-radius: 20px;
 }
 

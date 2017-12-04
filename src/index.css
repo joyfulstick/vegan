@@ -1,3 +1,11 @@
+:root {
+    --vegan-brown: #966909;
+    --burger-brown: #8f5c2c;
+    --vegan-cyan: #40a4c8;
+    --vegan-seeds: #cf8f2e;
+    --vegan-tofu: #f0de85;
+}
+
 body {
   margin: 0;
   padding: 0;
