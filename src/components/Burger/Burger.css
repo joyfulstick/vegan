@@ -8,6 +8,11 @@
   font-size: 1.2rem;
 }
 
+.Info {
+  background-color:rgba(200, 0, 0, .5);
+  color: white;
+}
+
 @media (min-width: 500px) and (max-height: 400px) {
   .Burger {
     width: 350px;
