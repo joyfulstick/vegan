@@ -84,7 +84,7 @@
 .Falafel {
     width: 80%;
     height: 7%;
-    background: linear-gradient(45deg, #fb3 50%, var(--vegan-seeds) 0);
+    background: linear-gradient(45deg, var(--vegan-seeds) 50%, #fb3 0);
     background-size: 30px 30px;
     margin: 2% auto;
     border-radius: 15px;
@@ -102,7 +102,7 @@
     width: 85%;
     height: 7%;
     margin: 2% auto;
-    background: linear-gradient(#228c1d, #91ce50);
+    background: linear-gradient(var(--salad), var(--salad-light));
     border-radius: 20px;
 }
 

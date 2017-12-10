@@ -4,10 +4,10 @@ import CheckoutSummary from '../../components/Order/CheckoutSummary/CheckoutSumm
 class Checkout extends Component {
   state = {
     ingredients: {
-      '4salad': 1,
-      '3tofu': 1,
-      '1falafel': 1,
-      '2beetroot': 1
+      '1salad': 1,
+      '2tofu': 1,
+      '3beetroot': 1,
+      '4falafel': 1
     }
   }
   render() {

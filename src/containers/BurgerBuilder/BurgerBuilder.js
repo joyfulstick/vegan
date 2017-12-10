@@ -9,10 +9,10 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHanlder';
 import axios from '../../axios-orders';
 
 const INGREDIENT_PRICES = {
-  '4salad': 0.7,
-  '3tofu': 2.5,
-  '1falafel': 6.3,
-  '2beetroot': 1.5
+  '1salad': .7,
+  '2tofu': 2.5,
+  '3beetroot': 1.5,
+  '4falafel': 2.5
 };
 
 class BurgerBuilder extends Component {
@@ -86,28 +86,29 @@ class BurgerBuilder extends Component {
   }
 
   purchaseContinueHandler = () => {
-    this.setState({ loading: true });
-    const order = {
-      ingredients: this.state.ingredients,
-      price: this.state.totalPrice,
-      customer: {
-        name: 'Michał Kijewicz',
-        addres: {
-          street: 'Berezyńska 13',
-          zipCode: '03-904',
-          country: 'Poland'
-        },
-        email: 'kijewicz@gmail.com'
-      },
-      deliveryMethod: 'standard'
-    };
-    axios.post('/orders.json', order)
-      .then(() => {
-        this.setState({ loading: false, purchaising: false });
-      })
-      .catch(() => {
-        this.setState({ loading: false, purchaising: false });
-      });
+    // this.setState({ loading: true });
+    // const order = {
+    //   ingredients: this.state.ingredients,
+    //   price: this.state.totalPrice,
+    //   customer: {
+    //     name: 'Michał Kijewicz',
+    //     addres: {
+    //       street: 'Berezyńska 13',
+    //       zipCode: '03-904',
+    //       country: 'Poland'
+    //     },
+    //     email: 'kijewicz@gmail.com'
+    //   },
+    //   deliveryMethod: 'standard'
+    // };
+    // axios.post('/orders.json', order)
+    //   .then(() => {
+    //     this.setState({ loading: false, purchaising: false });
+    //   })
+    //   .catch(() => {
+    //     this.setState({ loading: false, purchaising: false });
+    //   });
+    this.props.history.push('/checkout');
   }
 
   render() {

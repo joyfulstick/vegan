@@ -6,6 +6,11 @@
 
 @media (min-width: 600px) {
   .CheckoutSummary {
-    width: 500px;
+    width: 600px;
   }
+}
+
+.CheckoutSummary h1 {
+  color: var(--salad);  
+  -webkit-text-stroke: .02em var(--salad-light);
 }
