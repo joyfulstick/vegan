@@ -92,6 +92,7 @@ class BurgerBuilder extends Component {
         `${encodeURIComponent(i)}=${encodeURIComponent(this.state.ingredients[i])}`
       );
     }
+    queryParams.push(`price=${this.state.totalPrice}`);
     const queryString = queryParams.join('&');
     this.props.history.push({
       pathname: '/checkout',
@@ -110,7 +111,7 @@ class BurgerBuilder extends Component {
     let burger = (
       this.state.error
         ? <p style={{
-          backgroundColor: 'rgba(200,0,0,.5)', color: 'white'
+          backgroundColor: 'rgba(200,0,0,.5)', color: '#fff'
         }}>Ingredients can&apos;t be loaded</p>
         : <Spinner />);
     if (this.state.ingredients) {
