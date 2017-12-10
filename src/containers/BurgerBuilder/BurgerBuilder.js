@@ -12,7 +12,7 @@ const INGREDIENT_PRICES = {
   '1salad': .7,
   '2tofu': 2.5,
   '3beetroot': 1.5,
-  '4falafel': 2.5
+  '4falafel': 6.3
 };
 
 class BurgerBuilder extends Component {
