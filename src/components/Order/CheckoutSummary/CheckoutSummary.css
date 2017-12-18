@@ -11,8 +11,8 @@
 }
 
 .CheckoutSummary h1 {
-  color: var(--salad);  
-  -webkit-text-stroke: .02em var(--salad-light);
+  color: var(--magenta);
+  -webkit-text-stroke: .02em var(--magenta-lighter);
 }
 
 .CheckoutOptions {

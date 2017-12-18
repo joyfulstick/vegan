@@ -1,11 +1,27 @@
 :root {
-    --vegan-brown: #966909;
-    --burger-brown: #8f5c2c;
-    --vegan-cyan: #40a4c8;
-    --vegan-seeds: #cf8f2e;
-    --vegan-tofu: #f0de85;
-    --salad-light: #91ce50;
-    --salad: #228c1d;
+  --green: #90FF00;
+  --green-lighter: #D7FFA4;
+  --green-light: #C1FF70;
+  --green-dark: #70C600;
+  --green-darker: #569800;
+
+  --blue: #0ABBFF;
+  --blue-lighter: #A7E7FF;
+  --blue-light: #76D9FF;
+  --blue-dark: #006388;
+  --blue-darker: #004C69;
+
+  --orange: #FF8500;
+  --orange-lighter: #FFD3A4;
+  --orange-light: #FFBA70;
+  --orange-dark: #D97100;
+  --orange-darker: #A75700;
+
+  --magenta: #FF006B;
+  --magenta-lighter: #FFA4CA;
+  --magenta-light: #FF70AC;
+  --magenta-dark: #B9004E;
+  --magenta-darker: #8E003C;
 }
 
 body {
@@ -13,7 +29,7 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   background: #fff;
-  background-image: linear-gradient(90deg, rgba(64, 164, 200, .5) 50%, transparent 0),
-                    linear-gradient(rgba(64, 164, 200, .5) 50%, transparent 0);
+  background-image: linear-gradient(90deg, rgba(10, 187, 255, .5) 50%, transparent 0),
+                    linear-gradient(rgba(10, 187, 255, .5) 50%, transparent 0);
   background-size: 30px 30px;
 }

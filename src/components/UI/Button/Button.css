@@ -1,7 +1,7 @@
 .Button {
     background-color: transparent;
     border: none;
-    color: white;
+    color: #fff;
     outline: none;
     cursor: pointer;
     font: inherit;
@@ -16,9 +16,9 @@
 }
 
 .Success {
-    color: #5c9210;
+    color: var(--green-darker);
 }
 
 .Danger {
-    color: #954317;
+    color: var(--magenta-dark);
 }
