@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 
 const app = (
-  <BrowserRouter basename="/vegan/">
+  <HashRouter basename="/vegan">
     <App />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 ReactDOM.render(app, document.getElementById('root'));
