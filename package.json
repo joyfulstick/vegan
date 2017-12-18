@@ -1,5 +1,6 @@
 {
   "name": "vegan-burger",
+  "homepage": "http://joyfulstick.pl/vegan/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
