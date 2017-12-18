@@ -1,3 +1,17 @@
+# Vegan Burger
+
+Create your own delicious veggie burger with the [Vegan Burger App](http://joyfulstick.pl/vegan/)!
+This application is ispired by [Max's](https://www.academind.com/team) lectures.
+
+&nbsp;
+
+![screenshot-desktop](./src/assets/screenshots/screenshot-mobile.png)
+
+&nbsp;
+
+
+# Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
