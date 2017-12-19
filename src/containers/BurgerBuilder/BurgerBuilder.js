@@ -9,10 +9,10 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHanlder';
 import axios from '../../axios-orders';
 
 const INGREDIENT_PRICES = {
-  salad: .7,
-  tofu: 2.5,
   beetroot: 1.5,
-  falafel: 6.3
+  falafel: 6.3,
+  salad: .7,
+  tofu: 2.5
 };
 
 class BurgerBuilder extends Component {
@@ -26,13 +26,13 @@ class BurgerBuilder extends Component {
   }
 
   componentDidMount() {
-    axios.get('ingredients.json')
-      .then(response => {
-        this.setState({ ingredients: response.data });
-      })
-      .catch(() => {
-        this.setState({ error: true });
-      });
+    // axios.get('ingredients.json')
+    //   .then(response => {
+    //     this.setState({ ingredients: response.data });
+    //   })
+    //   .catch(() => {
+    //     this.setState({ error: true });
+    //   });
   }
 
   updatePurchaseState(ingredients) {
