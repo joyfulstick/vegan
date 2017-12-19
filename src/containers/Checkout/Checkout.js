@@ -6,7 +6,8 @@ import { Route } from 'react-router-dom';
 class Checkout extends Component {
   state = {
     ingredients: null,
-    price: 0
+    price: 0,
+    disabled: false
   }
 
   componentWillMount() {
@@ -29,6 +30,7 @@ class Checkout extends Component {
 
   checkoutContinuedHandler = () => {
     this.props.history.replace('/checkout/contact-data');
+    this.setState({ disabled: true });
   }
 
   render() {
@@ -37,7 +39,8 @@ class Checkout extends Component {
         <CheckoutSummary
           ingredients={this.state.ingredients}
           checkoutCancelled={this.checkoutCancelledHandler}
-          checkoutContinued={this.checkoutContinuedHandler} />
+          checkoutContinued={this.checkoutContinuedHandler}
+          disabled={this.state.disabled} />
         <Route
           path={`${this.props.match.path}/contact-data`}
           render={
