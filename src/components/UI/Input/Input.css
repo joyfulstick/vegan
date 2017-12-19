@@ -16,7 +16,7 @@
   box-sizing: border-box;
   width: 100%;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   background-color: #fff;
   font: inherit;
   padding: 6px 10px;
@@ -24,7 +24,7 @@
 
 .InputElement:focus {
   outline: none;
-  background-color: #ccc;
+  background-color: #ddd;
 }
 
 .Invalid {
