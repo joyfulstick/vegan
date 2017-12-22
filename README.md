@@ -1,7 +1,7 @@
 # Vegan Burger
 
 Create your own delicious veggie burger with the [Vegan Burger](http://joyfulstick.pl/vegan/)!
-The **React** app that uses: **Router, Redux, Axios and Firebase**.
+The **React** app that uses: **Router, Redux, Axios** and **Firebase**.<br>
 This application is ispired by [Max's](https://www.academind.com/team) lectures.
 
 &nbsp;
