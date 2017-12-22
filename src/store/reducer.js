@@ -37,9 +37,9 @@ const reducer = (state = initalState, action) => {
       },
       totalPrice: state.totalPrice - INGREDIENT_PRICES[action.ingredientName]
     };
-  default: state;
+  default: 
+    return state;
   }
-
 };
 
 export default reducer;
