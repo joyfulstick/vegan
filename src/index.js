@@ -6,17 +6,19 @@ import { createStore } from 'redux';
 import './index.css';
 import App from './App';
 import reducer from './store/reducer';
-// import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './registerServiceWorker';
 
-const store = createStore(reducer);
+const store = createStore(reducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 const app = (
   <Provider store={store}>
-    <BrowserRouter basename="/vegan">
+    <BrowserRouter basename="">
       <App />
     </BrowserRouter>
   </Provider>
 );
 
 ReactDOM.render(app, document.getElementById('root'));
-// registerServiceWorker();
+registerServiceWorker();
