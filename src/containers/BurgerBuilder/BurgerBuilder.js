@@ -12,19 +12,7 @@ import * as burgerBuilderActions from '../../store/actions/index';
 
 class BurgerBuilder extends Component {
   state = {
-    purchaising: false,
-    loading: false,
-    error: false
-  }
-
-  componentDidMount() {
-    // axios.get('ingredients.json')
-    //   .then(response => {
-    //     this.setState({ ingredients: response.data });
-    //   })
-    //   .catch(() => {
-    //     this.setState({ error: true });
-    //   });
+    purchaising: false
   }
 
   updatePurchaseState(ingredients) {
@@ -83,9 +71,7 @@ class BurgerBuilder extends Component {
         purchaseCancelled={this.purchaseCancelHandler}
         purchaseContinued={this.purchaseContinueHandler} />;
     }
-    if (this.state.loading) {
-      orderSummary = <Spinner />;
-    }
+
     return (
       <Aux>
         <Modal show={this.state.purchaising} modalClosed={this.purchaseCancelHandler}>
