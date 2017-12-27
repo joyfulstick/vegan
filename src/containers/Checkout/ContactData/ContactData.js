@@ -127,19 +127,11 @@ class ContactData extends Component {
     for (let formElementIdentifier in this.state.orderForm) {
       formData[formElementIdentifier] = this.state.orderForm[formElementIdentifier].value;
     }
-    const order = {
-      ingredients: this.props.ings,
-      price: this.props.price,
-      orderData: formData
-    };
-    axios.post('/orders.json', order)
-      .then(() => {
-        this.setState({ loading: false });
-        this.props.history.push('/');
-      })
-      .catch(() => {
-        this.setState({ loading: false });
-      });
+    // const order = {
+    //   ingredients: this.props.ings,
+    //   price: this.props.price,
+    //   orderData: formData
+    // };
   }
 
   inputChangedHandler = (event, inputIdentifier) => {

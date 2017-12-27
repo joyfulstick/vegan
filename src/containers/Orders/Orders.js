@@ -9,7 +9,7 @@ class Orders extends Component {
     loading: true
   }
   componentDidMount() {
-    axios.get('orders.json')
+    axios.get('/orders.json')
       .then(res => {
         const fetchedOrders = [];
         for (let key in res.data) {
