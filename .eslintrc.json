@@ -1,45 +1,11 @@
 {
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "node": true,
-    "jest/globals": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ],
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": true
-    },
-    "sourceType": "module"
-  },
-  "plugins": [
-    "react",
-    "jest"
-  ],
+  "extends": ["react-app", "eslint:recommended"],
   "rules": {
-    "indent": [
-      "warn",
-      2
-    ],
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
-    "quotes": [
-      "off",
-      "double"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ],
-    "no-console": "off",
-    "react/prop-types": "off"
+    "semi": [2, "never"],
+    "object-shorthand": 2,
+    "prefer-destructuring": 2,
+    "no-duplicate-imports": [2, { "includeExports": true }],
+    "sort-imports": 1,
+    "no-console": 1
   }
 }

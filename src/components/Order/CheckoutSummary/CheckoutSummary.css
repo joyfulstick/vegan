@@ -12,7 +12,7 @@
 
 .CheckoutSummary h1 {
   color: var(--magenta);
-  -webkit-text-stroke: .02em var(--magenta-lighter);
+  -webkit-text-stroke: 0.02em var(--magenta-lighter);
 }
 
 .CheckoutOptions {

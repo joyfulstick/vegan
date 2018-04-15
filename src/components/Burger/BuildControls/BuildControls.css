@@ -11,43 +11,44 @@
 }
 
 .OrderButton {
-    background-color: var(--orange-lighter);
-    outline: none;
-    cursor: pointer;
-    border: 1px solid var(--orange-darker);
-    color: var(--orange-darker);
-    font-family: inherit;
-    font-size: 1.2em;
-    margin: 30px;
-    padding: 15px 30px;
-    box-shadow: 2px 2px 2px var(--orange-darker);
+  background-color: var(--orange-lighter);
+  outline: none;
+  cursor: pointer;
+  border: 1px solid var(--orange-darker);
+  color: var(--orange-darker);
+  font-family: inherit;
+  font-size: 1.2em;
+  margin: 30px;
+  padding: 15px 30px;
+  box-shadow: 2px 2px 2px var(--orange-darker);
 }
 
-.OrderButton:hover, .OrderButton:active {
-    background-color: var(--orange);
-    border: 1px solid var(--orange-darker);
-    color: var(--orange-darker);
+.OrderButton:hover,
+.OrderButton:active {
+  background-color: var(--orange);
+  border: 1px solid var(--orange-darker);
+  color: var(--orange-darker);
 }
 
 .OrderButton:disabled {
-    background-color: var(--orange-lighter);
-    cursor: not-allowed;
-    border: 1px solid var(--orange);
-    color: #888;
+  background-color: var(--orange-lighter);
+  cursor: not-allowed;
+  border: 1px solid var(--orange);
+  color: #888;
 }
 
 .OrderButton:not(:disabled) {
-    animation: enable 0.3s linear;
+  animation: enable 0.3s linear;
 }
 
 @keyframes enable {
-    0% {
-        transform: scale(1);
-    }
-    60% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

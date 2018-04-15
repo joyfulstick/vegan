@@ -1,35 +1,39 @@
 :root {
-  --green: #90FF00;
-  --green-lighter: #D7FFA4;
-  --green-light: #C1FF70;
-  --green-dark: #70C600;
+  --green: #90ff00;
+  --green-lighter: #d7ffa4;
+  --green-light: #c1ff70;
+  --green-dark: #70c600;
   --green-darker: #569800;
 
-  --blue: #0ABBFF;
-  --blue-lighter: #A7E7FF;
-  --blue-light: #76D9FF;
+  --blue: #0abbff;
+  --blue-lighter: #a7e7ff;
+  --blue-light: #76d9ff;
   --blue-dark: #006388;
-  --blue-darker: #004C69;
+  --blue-darker: #004c69;
 
-  --orange: #FF8500;
-  --orange-lighter: #FFD3A4;
-  --orange-light: #FFBA70;
-  --orange-dark: #D97100;
-  --orange-darker: #A75700;
+  --orange: #ff8500;
+  --orange-lighter: #ffd3a4;
+  --orange-light: #ffba70;
+  --orange-dark: #d97100;
+  --orange-darker: #a75700;
 
-  --magenta: #FF006B;
-  --magenta-lighter: #FFA4CA;
-  --magenta-light: #FF70AC;
-  --magenta-dark: #B9004E;
-  --magenta-darker: #8E003C;
+  --magenta: #ff006b;
+  --magenta-lighter: #ffa4ca;
+  --magenta-light: #ff70ac;
+  --magenta-dark: #b9004e;
+  --magenta-darker: #8e003c;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #fff;
-  background-image: linear-gradient(90deg, rgba(10, 187, 255, .5) 50%, transparent 0),
-                    linear-gradient(rgba(10, 187, 255, .5) 50%, transparent 0);
+  background-image: linear-gradient(
+      90deg,
+      rgba(10, 187, 255, 0.5) 50%,
+      transparent 0
+    ),
+    linear-gradient(rgba(10, 187, 255, 0.5) 50%, transparent 0);
   background-size: 30px 30px;
 }

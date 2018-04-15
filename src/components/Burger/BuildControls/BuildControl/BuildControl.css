@@ -17,40 +17,42 @@
 }
 
 .BuildControl button:disabled {
-    background-color: var(--magenta-lighter);
-    border: 1px solid var(--magenta);
-    color: #ccc;
-    cursor: default;
+  background-color: var(--magenta-lighter);
+  border: 1px solid var(--magenta);
+  color: #ccc;
+  cursor: default;
 }
 
 .BuildControl button:hover:disabled {
-    background-color: var(--magenta-lighter);
-    color: #ccc;
-    cursor: not-allowed;
+  background-color: var(--magenta-lighter);
+  color: #ccc;
+  cursor: not-allowed;
 }
 
 .Label {
-    padding: 10px;
-    font-weight: bold;
-    width: 80px;
+  padding: 10px;
+  font-weight: bold;
+  width: 80px;
 }
 
-.BuildControl .Less {  
-    background-color: var(--magenta-light);
-    color: #fff;
+.BuildControl .Less {
+  background-color: var(--magenta-light);
+  color: #fff;
 }
 
 .BuildControl .More {
-    background-color: var(--green-darker);
-    color: #fff;
+  background-color: var(--green-darker);
+  color: #fff;
 }
 
-.BuildControl .Less:hover, .BuildControl .Less:active {  
-    background-color: var(--magenta);
-    color: #fff;
+.BuildControl .Less:hover,
+.BuildControl .Less:active {
+  background-color: var(--magenta);
+  color: #fff;
 }
 
-.BuildControl .More:hover,.BuildControl .More:active {
-    background-color: var(--green-dark);
-    color: #fff;
+.BuildControl .More:hover,
+.BuildControl .More:active {
+  background-color: var(--green-dark);
+  color: #fff;
 }
