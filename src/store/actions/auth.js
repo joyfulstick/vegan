@@ -1,5 +1,5 @@
-import axios from 'axios'
 import * as actionTypes from './actionsTypes'
+import axios from 'axios'
 
 export const authStart = () => {
   return {
@@ -9,7 +9,7 @@ export const authStart = () => {
 
 export const authSuccess = authData => {
   return {
-    type: actionTypes.AUTH_START,
+    type: actionTypes.AUTH_SUCCESS,
     authData,
   }
 }
@@ -21,7 +21,7 @@ export const authFail = error => {
   }
 }
 
-export const auth = (email, password) => {
+export const auth = (email, password, isSignup) => {
   return dispatch => {
     dispatch(authStart())
     const authData = {
@@ -29,17 +29,17 @@ export const auth = (email, password) => {
       password,
       returnSecureToken: true,
     }
+    let url =
+      'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyBv9KdBd_xzmJnrXD3kN8keWYwhvMB7dPo'
+    if (!isSignup)
+      url =
+        'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyBv9KdBd_xzmJnrXD3kN8keWYwhvMB7dPo'
     axios
-      .post(
-        'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyBv9KdBd_xzmJnrXD3kN8keWYwhvMB7dPo',
-        authData,
-      )
+      .post(url, authData)
       .then(response => {
-        console.log(response)
         dispatch(authSuccess(response.data))
       })
       .catch(err => {
-        console.log(err)
         dispatch(authFail(err))
       })
   }

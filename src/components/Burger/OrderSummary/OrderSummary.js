@@ -1,4 +1,4 @@
-import Aux from '../../../hoc/Aux/Aux'
+import Auxiliary from '../../../hoc/Auxiliary/Auxiliary'
 import Button from '../../UI/Button/Button'
 import React from 'react'
 
@@ -12,7 +12,7 @@ const orderSummary = props => {
     )
   })
   return (
-    <Aux>
+    <Auxiliary>
       <h3>Your Order</h3>
       <p>A delicious burger with the following ingredients:</p>
       <ul>{ingredientSummary}</ul>
@@ -26,7 +26,7 @@ const orderSummary = props => {
       <Button btnType="Success" clicked={props.purchaseContinued}>
         CONTINUE
       </Button>
-    </Aux>
+    </Auxiliary>
   )
 }
 
