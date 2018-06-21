@@ -6,4 +6,4 @@ export {
 
 export { puchaseBurger, purchaseInit, fetchOrders } from './order'
 
-export { auth } from './auth'
+export { auth, logout } from './auth'
