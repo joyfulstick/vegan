@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "git.autofetch": true,
+  "editor.rulers": [80],
+  "terminal.integrated.rendererType": "dom",
+  "prettier.semi": false,
+  "prettier.trailingComma": "all",
+  "prettier.singleQuote": true
+}

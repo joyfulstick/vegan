@@ -31,7 +31,11 @@ class BurgerBuilder extends Component {
   }
 
   purchaseHandler = () => {
-    this.setState({ purchaising: true })
+    if (this.props.isAuthenticated) {
+      this.setState({ purchaising: true })
+    } else {
+      this.props.history.push('/auth')
+    }
   }
 
   purchaseCancelHandler = () => {
@@ -56,7 +60,8 @@ class BurgerBuilder extends Component {
         style={{
           backgroundColor: 'rgba(200,0,0,.5)',
           color: '#fff',
-        }}>
+        }}
+      >
         Ingredients can&apos;t be loaded
       </p>
     ) : (
@@ -73,6 +78,7 @@ class BurgerBuilder extends Component {
             purchasable={this.updatePurchaseState(this.props.ings)}
             price={this.props.price}
             ordered={this.purchaseHandler}
+            isAuth={this.props.isAuthenticated}
           />
         </Auxiliary>
       )
@@ -90,7 +96,8 @@ class BurgerBuilder extends Component {
       <Auxiliary>
         <Modal
           show={this.state.purchaising}
-          modalClosed={this.purchaseCancelHandler}>
+          modalClosed={this.purchaseCancelHandler}
+        >
           {orderSummary}
         </Modal>
         {burger}
@@ -104,6 +111,7 @@ const mapStateToProps = state => {
     ings: state.burgerBuilder.ingredients,
     price: state.burgerBuilder.totalPrice,
     error: state.burgerBuilder.error,
+    isAuthenticated: state.auth.token !== null,
   }
 }
 
@@ -116,6 +124,7 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(
-  withErrorHandler(BurgerBuilder, axios),
-)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(withErrorHandler(BurgerBuilder, axios))
