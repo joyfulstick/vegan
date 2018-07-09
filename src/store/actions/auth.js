@@ -42,11 +42,9 @@ export const auth = (email, password, isSignup) => {
       password,
       returnSecureToken: true,
     }
-    let url =
-      `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${API_KEY}`
+    let url = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${API_KEY}`
     if (!isSignup)
-      url =
-        `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${API_KEY}`
+      url = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${API_KEY}`
     axios
       .post(url, authData)
       .then(response => {
@@ -56,5 +54,12 @@ export const auth = (email, password, isSignup) => {
       .catch(err => {
         dispatch(authFail(err.response.data.error))
       })
+  }
+}
+
+export const setAuthRedirectPath = path => {
+  return {
+    type: actionTypes.SET_AUTH_REDIRECT_PATH,
+    path,
   }
 }
