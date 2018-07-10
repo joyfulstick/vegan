@@ -4,12 +4,6 @@
   margin: auto;
 }
 
-@media (min-width: 720px) {
-  .CheckoutSummary {
-    max-width: 600px;
-  }
-}
-
 .CheckoutSummary h1 {
   color: var(--magenta);
   -webkit-text-stroke: 0.02em var(--magenta-lighter);
