@@ -10,7 +10,7 @@ import axios from '../../axios-orders'
 import { connect } from 'react-redux'
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHanlder'
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
   state = {
     purchaising: false,
   }
